@@ -61,6 +61,12 @@ export function formatDistance(km) {
   return `${Math.round(km).toLocaleString()} km`;
 }
 
+export function formatMiles(km) {
+  const mi = km * 0.621371;
+  if (mi < 1) return '<1 mi';
+  return `${Math.round(mi).toLocaleString()} mi`;
+}
+
 const STORAGE_KEY_PREFIX = 'beaming-geo-';
 
 export function loadSavedGame(dateStr) {

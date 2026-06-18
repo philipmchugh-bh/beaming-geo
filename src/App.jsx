@@ -8,6 +8,7 @@ import {
   scoreForDistance,
   emojiForDistance,
   formatDistance,
+  formatMiles,
   loadSavedGame,
   saveGame,
   buildShareText,
@@ -39,29 +40,6 @@ function ScoreDots({ current, rounds }) {
   );
 }
 
-function RoundResult({ round, provider, onNext, isLast }) {
-  return (
-    <div style={styles.overlay}>
-      <div style={styles.card}>
-        <div style={{ fontSize: 40, marginBottom: 4 }}>{round.emoji}</div>
-        <div style={styles.providerName}>{provider.name}</div>
-        <div style={styles.providerSpecialty}>{provider.specialty}</div>
-        <div style={{ fontSize: 13, color: 'var(--text-muted)', margin: '6px 0' }}>
-          {provider.city}, CA
-        </div>
-        <div style={{ fontSize: 28, fontWeight: 700, color: 'var(--teal-light)', margin: '12px 0 4px' }}>
-          +{round.score} pts
-        </div>
-        <div style={{ fontSize: 14, color: 'var(--text-muted)' }}>
-          {formatDistance(round.distance)} away
-        </div>
-        <button style={styles.btn} onClick={onNext}>
-          {isLast ? 'See Results' : 'Next Provider →'}
-        </button>
-      </div>
-    </div>
-  );
-}
 
 function ResultsScreen({ rounds, dailyProviders, dateStr, onReset }) {
   const [copied, setCopied] = useState(false);
@@ -96,7 +74,7 @@ function ResultsScreen({ rounds, dailyProviders, dateStr, onReset }) {
                 <span style={{ fontSize: 22 }}>{r.emoji}</span>
                 <div style={{ textAlign: 'left' }}>
                   <div style={{ fontSize: 14, fontWeight: 600 }}>{dailyProviders[i].name}</div>
-                  <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{dailyProviders[i].city} · {formatDistance(r.distance)}</div>
+                  <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{dailyProviders[i].city} · {formatMiles(r.distance)}</div>
                 </div>
               </div>
               <div style={{ fontSize: 18, fontWeight: 700, color: 'var(--teal-light)' }}>+{r.score}</div>
@@ -204,9 +182,11 @@ export default function App() {
         <div style={styles.providerName}>{provider.name}</div>
         <div style={styles.providerSpecialty}>{provider.specialty}</div>
         <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>
-          {pendingGuess
-            ? 'Tap "Confirm Guess" or pick a different spot'
-            : 'Tap the globe to place your guess'}
+          {phase === 'result'
+            ? `${provider.city}, CA`
+            : pendingGuess
+              ? 'Tap "Confirm Guess" or pick a different spot'
+              : 'Tap the globe to place your guess'}
         </div>
       </div>
 
@@ -220,7 +200,7 @@ export default function App() {
         />
       </div>
 
-      {/* Confirm button */}
+      {/* Confirm / result strip */}
       {phase === 'guessing' && pendingGuess && (
         <div style={styles.confirmWrap}>
           <button style={styles.btn} onClick={handleConfirmGuess}>
@@ -232,14 +212,23 @@ export default function App() {
         </div>
       )}
 
-      {/* Round result overlay */}
       {phase === 'result' && currentRoundResult && (
-        <RoundResult
-          round={currentRoundResult}
-          provider={provider}
-          onNext={handleNextRound}
-          isLast={currentRound + 1 >= TOTAL_ROUNDS}
-        />
+        <div style={styles.resultStrip}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <span style={{ fontSize: 22 }}>{currentRoundResult.emoji}</span>
+            <div>
+              <div style={{ fontSize: 15, fontWeight: 700, color: 'var(--teal-light)' }}>
+                +{currentRoundResult.score} pts
+              </div>
+              <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>
+                {formatMiles(currentRoundResult.distance)} away
+              </div>
+            </div>
+          </div>
+          <button style={{ ...styles.btn, marginTop: 0 }} onClick={handleNextRound}>
+            {currentRound + 1 >= TOTAL_ROUNDS ? 'See Results' : 'Next →'}
+          </button>
+        </div>
       )}
     </div>
   );
@@ -298,6 +287,17 @@ const styles = {
     marginTop: 10,
     display: 'flex',
     justifyContent: 'center',
+    flexShrink: 0,
+  },
+  resultStrip: {
+    marginTop: 10,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    background: 'var(--surface)',
+    border: '1px solid var(--surface2)',
+    borderRadius: 12,
+    padding: '10px 16px',
     flexShrink: 0,
   },
   btn: {
