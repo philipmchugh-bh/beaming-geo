@@ -1,8 +1,9 @@
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN;
+const TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
+if (TOKEN) mapboxgl.accessToken = TOKEN;
 
 const LINE_SOURCE = 'guess-line';
 const LINE_LAYER  = 'guess-line-layer';
@@ -10,6 +11,7 @@ const LINE_LAYER  = 'guess-line-layer';
 export default function Globe({ onGuess, guessLatLng, correctLatLng, disabled }) {
   const containerRef    = useRef();
   const mapRef          = useRef(null);
+  const [tokenMissing]  = useState(!TOKEN);
   const onGuessRef      = useRef(onGuess);
   const disabledRef     = useRef(disabled);
   const guessMarkerRef  = useRef(null);
@@ -20,6 +22,7 @@ export default function Globe({ onGuess, guessLatLng, correctLatLng, disabled })
 
   // Initialize map once
   useEffect(() => {
+    if (tokenMissing) return;
     const map = new mapboxgl.Map({
       container: containerRef.current,
       style: 'mapbox://styles/mapbox/satellite-streets-v12',
@@ -62,8 +65,14 @@ export default function Globe({ onGuess, guessLatLng, correctLatLng, disabled })
       }
     });
 
+    // Resize the canvas whenever the container changes size (handles flex layout settling
+    // in production builds where the container may be 0×0 at initialization time).
+    const ro = new ResizeObserver(() => map.resize());
+    ro.observe(containerRef.current);
+
     mapRef.current = map;
     return () => {
+      ro.disconnect();
       map.remove();
       mapRef.current = null;
     };
@@ -126,6 +135,15 @@ export default function Globe({ onGuess, guessLatLng, correctLatLng, disabled })
       source.setData({ type: 'Feature', geometry: { type: 'LineString', coordinates: [] } });
     }
   }, [guessLatLng, correctLatLng]);
+
+  if (tokenMissing) {
+    return (
+      <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 8, color: 'var(--text-muted)', fontSize: 13 }}>
+        <div>Map unavailable</div>
+        <div style={{ fontSize: 11 }}>VITE_MAPBOX_TOKEN not set</div>
+      </div>
+    );
+  }
 
   return <div ref={containerRef} style={{ width: '100%', height: '100%' }} />;
 }
