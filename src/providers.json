@@ -1,12 +1,3282 @@
 [
-  { "name": "Sarah Chen, SLP", "specialty": "Speech-Language Pathologist · Pediatric Fluency", "city": "San Francisco", "lat": 37.7749, "lng": -122.4194 },
-  { "name": "Marcus Rivera, OT", "specialty": "Occupational Therapist · Sensory Integration", "city": "Los Angeles", "lat": 34.0522, "lng": -118.2437 },
-  { "name": "Priya Patel, PT", "specialty": "Physical Therapist · Pediatric Rehab", "city": "San Diego", "lat": 32.7157, "lng": -117.1611 },
-  { "name": "Jordan Kim, SLP", "specialty": "Speech-Language Pathologist · AAC Specialist", "city": "Sacramento", "lat": 38.5816, "lng": -121.4944 },
-  { "name": "Aisha Thompson, OT", "specialty": "Occupational Therapist · Fine Motor Skills", "city": "San Jose", "lat": 37.3382, "lng": -121.8863 },
-  { "name": "Carlos Mendez, PT", "specialty": "Physical Therapist · Neurological Conditions", "city": "Fresno", "lat": 36.7378, "lng": -119.7871 },
-  { "name": "Emily Nguyen, SLP", "specialty": "Speech-Language Pathologist · Autism Spectrum", "city": "Oakland", "lat": 37.8044, "lng": -122.2712 },
-  { "name": "David Park, OT", "specialty": "Occupational Therapist · School-Based Services", "city": "Riverside", "lat": 33.9806, "lng": -117.3755 },
-  { "name": "Sofia Rodriguez, PT", "specialty": "Physical Therapist · Sports & Orthopedic", "city": "Santa Ana", "lat": 33.7455, "lng": -117.8677 },
-  { "name": "Lena Hoffman, SLP", "specialty": "Speech-Language Pathologist · Voice Disorders", "city": "Bakersfield", "lat": 35.3733, "lng": -119.0187 }
+  {
+    "name": "Christina Burnham, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Uhland",
+    "state": "TX",
+    "lat": 29.9988,
+    "lng": -97.7906
+  },
+  {
+    "name": "Gabriel Hershberger, SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Marcos",
+    "state": "TX",
+    "lat": 29.8833,
+    "lng": -97.9414
+  },
+  {
+    "name": "Julie Reiss, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Walnut Creek",
+    "state": "CA",
+    "lat": 37.9101,
+    "lng": -122.0652
+  },
+  {
+    "name": "Amy Berry, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Petaluma",
+    "state": "CA",
+    "lat": 38.2324,
+    "lng": -122.6367
+  },
+  {
+    "name": "Kim Arzillo, M.S.",
+    "specialty": "Occupational Therapist",
+    "city": "Sherman Oaks",
+    "state": "CA",
+    "lat": 34.1511,
+    "lng": -118.4493
+  },
+  {
+    "name": "Vivienne Finche, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Alameda",
+    "state": "CA",
+    "lat": 37.7652,
+    "lng": -122.2416
+  },
+  {
+    "name": "Juliana Lainez, OTD, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "San Bruno",
+    "state": "CA",
+    "lat": 37.6305,
+    "lng": -122.4111
+  },
+  {
+    "name": "Andalusia Masad, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Kristen Kyong, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Belmont",
+    "state": "CA",
+    "lat": 37.5202,
+    "lng": -122.2758
+  },
+  {
+    "name": "Kristen McNutt, MOT, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "Danville",
+    "state": "CA",
+    "lat": 37.8216,
+    "lng": -121.9999
+  },
+  {
+    "name": "Mikaela Kalafate-Lucchetti, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sonoma",
+    "state": "CA",
+    "lat": 38.2919,
+    "lng": -122.458
+  },
+  {
+    "name": "Andrea Gingras, M.A., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Concord",
+    "state": "CA",
+    "lat": 37.978,
+    "lng": -122.0311
+  },
+  {
+    "name": "Scott Davis, M.A., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fort Myers",
+    "state": "FL",
+    "lat": 26.6406,
+    "lng": -81.8723
+  },
+  {
+    "name": "Grace Hedgecock, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Jose",
+    "state": "CA",
+    "lat": 37.3382,
+    "lng": -121.8863
+  },
+  {
+    "name": "Dee Kennedy, MSOT, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "White Pine",
+    "state": "TN",
+    "lat": 36.1031,
+    "lng": -83.2874
+  },
+  {
+    "name": "Sylvia Ndusha, OTD, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Melissa Santos, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Long Beach",
+    "state": "CA",
+    "lat": 33.7701,
+    "lng": -118.1937
+  },
+  {
+    "name": "Karla Jimenez, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Long Beach",
+    "state": "CA",
+    "lat": 33.7701,
+    "lng": -118.1937
+  },
+  {
+    "name": "Alina Topchiy, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Roseville",
+    "state": "CA",
+    "lat": 38.7521,
+    "lng": -121.288
+  },
+  {
+    "name": "Jennifer Dantanavatanawong, M.A., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Concord",
+    "state": "CA",
+    "lat": 37.978,
+    "lng": -122.0311
+  },
+  {
+    "name": "Bonnie Goce-Camat, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Anisha Antony, MS, OTR/L",
+    "specialty": "Feeding Therapist",
+    "city": "San Jose",
+    "state": "CA",
+    "lat": 37.3382,
+    "lng": -121.8863
+  },
+  {
+    "name": "Ani Harbottle, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Concord",
+    "state": "CA",
+    "lat": 37.978,
+    "lng": -122.0311
+  },
+  {
+    "name": "Jason Tse, OT",
+    "specialty": "Occupational Therapist",
+    "city": "Pepeekeo",
+    "state": "HI",
+    "lat": 19.8339,
+    "lng": -155.1027
+  },
+  {
+    "name": "Angela Shumake, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "lat": 38.4404,
+    "lng": -122.7141
+  },
+  {
+    "name": "Kristina Babayan, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sun Valley",
+    "state": "CA",
+    "lat": 34.2214,
+    "lng": -118.3731
+  },
+  {
+    "name": "Silvano Perez, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Pittsburg",
+    "state": "CA",
+    "lat": 38.0277,
+    "lng": -121.8847
+  },
+  {
+    "name": "Rajashri Iyengar, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fremont",
+    "state": "CA",
+    "lat": 37.5485,
+    "lng": -121.9886
+  },
+  {
+    "name": "Sarah Panian, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Marilyn Aviles, OT",
+    "specialty": "Occupational Therapist",
+    "city": "Pittsburg",
+    "state": "CA",
+    "lat": 38.0277,
+    "lng": -121.8847
+  },
+  {
+    "name": "Kelsey McKee, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Danielle Melanephy, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Petaluma",
+    "state": "CA",
+    "lat": 38.2324,
+    "lng": -122.6367
+  },
+  {
+    "name": "Gabby Aviles, OT",
+    "specialty": "Occupational Therapist",
+    "city": "Pleasanton",
+    "state": "CA",
+    "lat": 37.6624,
+    "lng": -121.8747
+  },
+  {
+    "name": "Fushia Crooms, OT",
+    "specialty": "Occupational Therapist",
+    "city": "Inglewood",
+    "state": "CA",
+    "lat": 33.9617,
+    "lng": -118.3531
+  },
+  {
+    "name": "Bambi Olujumu, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Quiara Smith, OTD, OTR/L, CEIM",
+    "specialty": "Occupational Therapist",
+    "city": "Windsor",
+    "state": "CA",
+    "lat": 38.5474,
+    "lng": -122.8141
+  },
+  {
+    "name": "Amanda McNamara, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Ramona",
+    "state": "CA",
+    "lat": 33.042,
+    "lng": -116.8725
+  },
+  {
+    "name": "Roland Juarez, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Riverside",
+    "state": "CA",
+    "lat": 33.9806,
+    "lng": -117.3755
+  },
+  {
+    "name": "David Dean, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Ontario",
+    "state": "CA",
+    "lat": 34.0633,
+    "lng": -117.6509
+  },
+  {
+    "name": "Camille Hampton, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Torrance",
+    "state": "CA",
+    "lat": 33.8358,
+    "lng": -118.3406
+  },
+  {
+    "name": "Lauren Cannon, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Santa Clarita",
+    "state": "CA",
+    "lat": 34.3917,
+    "lng": -118.5426
+  },
+  {
+    "name": "Alicia Archuleta, SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Riverside",
+    "state": "CA",
+    "lat": 33.9806,
+    "lng": -117.3755
+  },
+  {
+    "name": "Emily Ann Becker, BS, MOTR/L, CNS, CAPS",
+    "specialty": "Occupational Therapist",
+    "city": "Pleasant Hill",
+    "state": "CA",
+    "lat": 37.9477,
+    "lng": -122.0608
+  },
+  {
+    "name": "Jackie Ueng, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Palm Desert",
+    "state": "CA",
+    "lat": 33.7225,
+    "lng": -116.3742
+  },
+  {
+    "name": "Anna Wheatley, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Jamie McGill, OT",
+    "specialty": "Occupational Therapist",
+    "city": "Castro Valley",
+    "state": "CA",
+    "lat": 37.6922,
+    "lng": -122.0858
+  },
+  {
+    "name": "Anitha Rajendran, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Pleasanton",
+    "state": "CA",
+    "lat": 37.6624,
+    "lng": -121.8747
+  },
+  {
+    "name": "Jennifer Perry, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Newark",
+    "state": "CA",
+    "lat": 37.5296,
+    "lng": -122.0402
+  },
+  {
+    "name": "Leslie Whitaker, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Palm Beach Gardens",
+    "state": "FL",
+    "lat": 26.8233,
+    "lng": -80.1217
+  },
+  {
+    "name": "Emily Zgoda",
+    "specialty": "Occupational Therapist",
+    "city": "La Jolla",
+    "state": "CA",
+    "lat": 32.8328,
+    "lng": -117.2713
+  },
+  {
+    "name": "Corey LaCombe",
+    "specialty": "Occupational Therapist",
+    "city": "San Jose",
+    "state": "CA",
+    "lat": 37.3382,
+    "lng": -121.8863
+  },
+  {
+    "name": "Jessie Kensey",
+    "specialty": "Speech-Language Pathologist",
+    "city": "RANCHO SANTA MARGARITA",
+    "state": "CA",
+    "lat": 33.6409,
+    "lng": -117.5988
+  },
+  {
+    "name": "Malina Mar, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Alice Wong",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Kate Boeh, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Kelly Gong",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Monserrat Vera Rumbo",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Rachael Pabis, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "El Cajon",
+    "state": "CA",
+    "lat": 32.7948,
+    "lng": -116.9625
+  },
+  {
+    "name": "Ricardo Trujillo",
+    "specialty": "Occupational Therapist",
+    "city": "Antioch",
+    "state": "CA",
+    "lat": 37.9963,
+    "lng": -121.8058
+  },
+  {
+    "name": "Jenna Watnick",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Ramon",
+    "state": "CA",
+    "lat": 37.7799,
+    "lng": -121.978
+  },
+  {
+    "name": "Lindy Giammichele",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Ines Choy Davis",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Murrieta",
+    "state": "CA",
+    "lat": 33.5539,
+    "lng": -117.2139
+  },
+  {
+    "name": "Jamie Zabat",
+    "specialty": "Occupational Therapist",
+    "city": "South San Francisco",
+    "state": "CA",
+    "lat": 37.6547,
+    "lng": -122.4077
+  },
+  {
+    "name": "Grace Lee",
+    "specialty": "Occupational Therapist",
+    "city": "Stanford",
+    "state": "CA",
+    "lat": 37.4275,
+    "lng": -122.1697
+  },
+  {
+    "name": "Jose Gonzalez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Visalia",
+    "state": "CA",
+    "lat": 36.3302,
+    "lng": -119.2921
+  },
+  {
+    "name": "Hiu Laam Cheung",
+    "specialty": "Occupational Therapist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Roma Lee Ybera",
+    "specialty": "Occupational Therapist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Jamie Felix, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Hyde Park",
+    "state": "UT",
+    "lat": 41.7803,
+    "lng": -111.9927
+  },
+  {
+    "name": "Flor Nanu",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Rohnert Park",
+    "state": "CA",
+    "lat": 38.3396,
+    "lng": -122.7011
+  },
+  {
+    "name": "Zoe Morphis",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Jacquie Tyrell",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Mackenzie Wood",
+    "specialty": "Occupational Therapist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Jaimie Dorricott",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Gloria Leinbach",
+    "specialty": "Occupational Therapist",
+    "city": "Clayton",
+    "state": "CA",
+    "lat": 37.9408,
+    "lng": -121.9358
+  },
+  {
+    "name": "Carleigh Robinson, OT",
+    "specialty": "Occupational Therapist",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "lat": 38.4404,
+    "lng": -122.7141
+  },
+  {
+    "name": "Deborah Lim",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Hermosa Beach",
+    "state": "CA",
+    "lat": 33.8622,
+    "lng": -118.3995
+  },
+  {
+    "name": "Karen Vang",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Elk Grove",
+    "state": "CA",
+    "lat": 38.4088,
+    "lng": -121.3716
+  },
+  {
+    "name": "River Steinberg, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Grover Beach",
+    "state": "CA",
+    "lat": 35.1219,
+    "lng": -120.6213
+  },
+  {
+    "name": "Lorraine Atoui",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Anjelica Houston",
+    "specialty": "Occupational Therapist",
+    "city": "Clayton",
+    "state": "CA",
+    "lat": 37.9408,
+    "lng": -121.9358
+  },
+  {
+    "name": "Emily Lankin",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Alina Cuenca",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Guadalupe",
+    "state": "CA",
+    "lat": 34.9719,
+    "lng": -120.5721
+  },
+  {
+    "name": "Amara Kyaw",
+    "specialty": "Occupational Therapist",
+    "city": "Daly City",
+    "state": "CA",
+    "lat": 37.6879,
+    "lng": -122.4702
+  },
+  {
+    "name": "Sarah Rainer",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Pleasant Hill",
+    "state": "CA",
+    "lat": 37.9477,
+    "lng": -122.0608
+  },
+  {
+    "name": "Shannon Skupien",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Lauren Gaunt",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Jessica Pryt",
+    "specialty": "Occupational Therapist",
+    "city": "Clayton",
+    "state": "CA",
+    "lat": 37.9408,
+    "lng": -121.9358
+  },
+  {
+    "name": "Gabbi White",
+    "specialty": "Occupational Therapist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Hannah Geiger",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Santa Ana",
+    "state": "CA",
+    "lat": 33.7455,
+    "lng": -117.8677
+  },
+  {
+    "name": "Andres Haro",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Hawthorne",
+    "state": "CA",
+    "lat": 33.9164,
+    "lng": -118.3526
+  },
+  {
+    "name": "Shamaree Lewis",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Gardena",
+    "state": "CA",
+    "lat": 33.8883,
+    "lng": -118.309
+  },
+  {
+    "name": "Lily Sullivan",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "lat": 38.4404,
+    "lng": -122.7141
+  },
+  {
+    "name": "Ariel Knight",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Santa Barbara",
+    "state": "CA",
+    "lat": 34.4208,
+    "lng": -119.6982
+  },
+  {
+    "name": "Nichole Bryan",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Hemet",
+    "state": "CA",
+    "lat": 33.7475,
+    "lng": -116.9719
+  },
+  {
+    "name": "Lauren Hadden",
+    "specialty": "Occupational Therapist",
+    "city": "Burlingame",
+    "state": "CA",
+    "lat": 37.5841,
+    "lng": -122.3661
+  },
+  {
+    "name": "Lee Sonko",
+    "specialty": "Occupational Therapist",
+    "city": "El Cerrito",
+    "state": "CA",
+    "lat": 37.9236,
+    "lng": -122.3122
+  },
+  {
+    "name": "Kayla Knebel",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Jose",
+    "state": "CA",
+    "lat": 37.3382,
+    "lng": -121.8863
+  },
+  {
+    "name": "Aunjalee Randhawa",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Yuba City",
+    "state": "CA",
+    "lat": 39.1404,
+    "lng": -121.6169
+  },
+  {
+    "name": "Raveena Davit",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Yuba City",
+    "state": "CA",
+    "lat": 39.1404,
+    "lng": -121.6169
+  },
+  {
+    "name": "Jaspreet Bains",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Yuba City",
+    "state": "CA",
+    "lat": 39.1404,
+    "lng": -121.6169
+  },
+  {
+    "name": "Stephanie Cepeda",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lynwood",
+    "state": "CA",
+    "lat": 33.9303,
+    "lng": -118.2117
+  },
+  {
+    "name": "Christy Hack",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Karin Hartunian Koukeyan",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Glendale",
+    "state": "CA",
+    "lat": 34.1425,
+    "lng": -118.2551
+  },
+  {
+    "name": "Kalli Hale",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Winchester",
+    "state": "CA",
+    "lat": 33.7086,
+    "lng": -117.0892
+  },
+  {
+    "name": "Deanna Farmer",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Linden",
+    "state": "CA",
+    "lat": 37.9927,
+    "lng": -121.0808
+  },
+  {
+    "name": "Ali Chu",
+    "specialty": "Occupational Therapist",
+    "city": "Foster City",
+    "state": "CA",
+    "lat": 37.5585,
+    "lng": -122.2711
+  },
+  {
+    "name": "Dani Bennett",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Kasi Clark",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Riverside",
+    "state": "CA",
+    "lat": 33.9806,
+    "lng": -117.3755
+  },
+  {
+    "name": "Chloe Conrad M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Tania Labossiere",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Grayson",
+    "state": "GA",
+    "lat": 33.8926,
+    "lng": -83.9602
+  },
+  {
+    "name": "Lani Hatch",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Garden Grove",
+    "state": "CA",
+    "lat": 33.7739,
+    "lng": -117.9601
+  },
+  {
+    "name": "Kelly Van Clief",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Lelac Soderberg",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Thousand Oaks",
+    "state": "CA",
+    "lat": 34.1706,
+    "lng": -118.8376
+  },
+  {
+    "name": "Aly Bir",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Juan Capistrano",
+    "state": "CA",
+    "lat": 33.5017,
+    "lng": -117.6625
+  },
+  {
+    "name": "Hayle Lueth",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Modesto",
+    "state": "CA",
+    "lat": 37.6391,
+    "lng": -120.9969
+  },
+  {
+    "name": "Emma Baldwin",
+    "specialty": "Occupational Therapist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Anais Baghdoyan",
+    "specialty": "Occupational Therapist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Coral Spencer",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Ventura",
+    "state": "CA",
+    "lat": 34.2746,
+    "lng": -119.229
+  },
+  {
+    "name": "Haleli Moalem",
+    "specialty": "Occupational Therapist",
+    "city": "Palo Alto",
+    "state": "CA",
+    "lat": 37.4419,
+    "lng": -122.143
+  },
+  {
+    "name": "Vanessa Duff",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Olivia McGee",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Venice",
+    "state": "CA",
+    "lat": 33.985,
+    "lng": -118.4695
+  },
+  {
+    "name": "Sam Berger",
+    "specialty": "Occupational Therapist",
+    "city": "Culver City",
+    "state": "CA",
+    "lat": 34.0211,
+    "lng": -118.3965
+  },
+  {
+    "name": "Eileen Finley",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Molly Koustmer",
+    "specialty": "Occupational Therapist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Joseph Arafa",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Radina Veliova",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Steven Spraragen",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Kavita Patel",
+    "specialty": "Occupational Therapist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Jessica Zhang",
+    "specialty": "Occupational Therapist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Cindy Esquivias",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Mateo",
+    "state": "CA",
+    "lat": 37.563,
+    "lng": -122.3255
+  },
+  {
+    "name": "Nancy Lee",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fremont",
+    "state": "CA",
+    "lat": 37.5485,
+    "lng": -121.9886
+  },
+  {
+    "name": "Ashley Kinsling",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Long Beach",
+    "state": "CA",
+    "lat": 33.7701,
+    "lng": -118.1937
+  },
+  {
+    "name": "Priya Bhasin",
+    "specialty": "Occupational Therapist",
+    "city": "Larkspur",
+    "state": "CA",
+    "lat": 37.9349,
+    "lng": -122.5341
+  },
+  {
+    "name": "Cody Forbes",
+    "specialty": "Occupational Therapist",
+    "city": "Clayton",
+    "state": "CA",
+    "lat": 37.9408,
+    "lng": -121.9358
+  },
+  {
+    "name": "Sandy Britt",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Aliso Viejo",
+    "state": "CA",
+    "lat": 33.5769,
+    "lng": -117.7256
+  },
+  {
+    "name": "Kelsey Paras",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Orange County",
+    "state": "CA",
+    "lat": 33.7175,
+    "lng": -117.8311
+  },
+  {
+    "name": "Tara Tullis",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Larkspur",
+    "state": "CA",
+    "lat": 37.9349,
+    "lng": -122.5341
+  },
+  {
+    "name": "Katie Woolley",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Megan Crooks",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Santa Barbara",
+    "state": "CA",
+    "lat": 34.4208,
+    "lng": -119.6982
+  },
+  {
+    "name": "Julia Dariychuk",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Alexandra Aguirre",
+    "specialty": "Speech-Language Pathologist",
+    "city": "El Cajon",
+    "state": "CA",
+    "lat": 32.7948,
+    "lng": -116.9625
+  },
+  {
+    "name": "Anne Mathew",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Elea Bushati",
+    "specialty": "Occupational Therapist",
+    "city": "Redondo",
+    "state": "CA",
+    "lat": 33.8492,
+    "lng": -118.3884
+  },
+  {
+    "name": "Lisa Ryan",
+    "specialty": "Occupational Therapist",
+    "city": "San Rafael",
+    "state": "CA",
+    "lat": 37.9735,
+    "lng": -122.5311
+  },
+  {
+    "name": "Diane Tom",
+    "specialty": "Occupational Therapist",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "lat": 37.3688,
+    "lng": -122.0363
+  },
+  {
+    "name": "Brenen Zey",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Foothill Ranch",
+    "state": "CA",
+    "lat": 33.6858,
+    "lng": -117.6742
+  },
+  {
+    "name": "Adrien Harrison",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Foothill Ranch",
+    "state": "CA",
+    "lat": 33.6858,
+    "lng": -117.6742
+  },
+  {
+    "name": "Jordyn Sheriff",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Foothill Ranch",
+    "state": "CA",
+    "lat": 33.6858,
+    "lng": -117.6742
+  },
+  {
+    "name": "Melanie Hendrickson",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Lilliana Esqueda-Flores",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Visalia",
+    "state": "CA",
+    "lat": 36.3302,
+    "lng": -119.2921
+  },
+  {
+    "name": "Carolina Isaza Uribe",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Vivian Wong",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "lat": 33.8492,
+    "lng": -118.3884
+  },
+  {
+    "name": "Ruth Maldonado",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Escondido",
+    "state": "CA",
+    "lat": 33.1192,
+    "lng": -117.0864
+  },
+  {
+    "name": "Eiliana Hernandez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Escondido",
+    "state": "CA",
+    "lat": 33.1192,
+    "lng": -117.0864
+  },
+  {
+    "name": "Kasey Dutra-Ley",
+    "specialty": "Occupational Therapist",
+    "city": "Mill Valley",
+    "state": "CA",
+    "lat": 37.906,
+    "lng": -122.545
+  },
+  {
+    "name": "Rachael Jonik",
+    "specialty": "Occupational Therapist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Lesly Ocotitla Saucedo",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Jordan Kuchta",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Culver City",
+    "state": "CA",
+    "lat": 34.0211,
+    "lng": -118.3965
+  },
+  {
+    "name": "Supreet Kaur",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Andrea Manghiuc",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lake Forest",
+    "state": "CA",
+    "lat": 33.6469,
+    "lng": -117.6892
+  },
+  {
+    "name": "Justine Dolan",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Moraga",
+    "state": "CA",
+    "lat": 37.8349,
+    "lng": -122.13
+  },
+  {
+    "name": "Erica Pedersen",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Encinitas",
+    "state": "CA",
+    "lat": 33.0369,
+    "lng": -117.2919
+  },
+  {
+    "name": "Cierra Gratz",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Bonsall",
+    "state": "CA",
+    "lat": 33.2867,
+    "lng": -117.2286
+  },
+  {
+    "name": "Jenny Weaver",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Bridget Quinlan",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Hillary Crow",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lake Forest",
+    "state": "CA",
+    "lat": 33.6469,
+    "lng": -117.6892
+  },
+  {
+    "name": "Brianna Ranney",
+    "specialty": "Occupational Therapist",
+    "city": "Livermore",
+    "state": "CA",
+    "lat": 37.6819,
+    "lng": -121.7681
+  },
+  {
+    "name": "Analisa Church",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "lat": 33.8492,
+    "lng": -118.3884
+  },
+  {
+    "name": "Kaitlynn Wallace",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Acampo",
+    "state": "CA",
+    "lat": 38.1877,
+    "lng": -121.2527
+  },
+  {
+    "name": "Amanda Laccone",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Sonia Hiller",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Venice",
+    "state": "CA",
+    "lat": 33.985,
+    "lng": -118.4695
+  },
+  {
+    "name": "Elizabeth Bascom",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Castro Valley",
+    "state": "CA",
+    "lat": 37.6922,
+    "lng": -122.0858
+  },
+  {
+    "name": "Minal Shah",
+    "specialty": "Occupational Therapist",
+    "city": "San Jose",
+    "state": "CA",
+    "lat": 37.3382,
+    "lng": -121.8863
+  },
+  {
+    "name": "Yulia McAfee",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Culver City",
+    "state": "CA",
+    "lat": 34.0211,
+    "lng": -118.3965
+  },
+  {
+    "name": "Mary Lou Ninan",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Pacifica",
+    "state": "CA",
+    "lat": 37.6138,
+    "lng": -122.4869
+  },
+  {
+    "name": "Taylor Brown",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Ricardo Herrera, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Ventura",
+    "state": "CA",
+    "lat": 34.2746,
+    "lng": -119.229
+  },
+  {
+    "name": "Kathye Castaneda, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sunnyvale",
+    "state": "CA",
+    "lat": 37.3688,
+    "lng": -122.0363
+  },
+  {
+    "name": "Annessa Whisenhunt",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Diamond Bar",
+    "state": "CA",
+    "lat": 34.0289,
+    "lng": -117.8103
+  },
+  {
+    "name": "Melissa Balagtas, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Elk Grove",
+    "state": "CA",
+    "lat": 38.4088,
+    "lng": -121.3716
+  },
+  {
+    "name": "Sophi Hinks, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Rocklin",
+    "state": "CA",
+    "lat": 38.7907,
+    "lng": -121.2357
+  },
+  {
+    "name": "Cassie Kerr, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Oxnard",
+    "state": "CA",
+    "lat": 34.1975,
+    "lng": -119.1771
+  },
+  {
+    "name": "Renee Dolberry, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Stevie Burciaga, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Jurupa Valley",
+    "state": "CA",
+    "lat": 33.9972,
+    "lng": -117.4854
+  },
+  {
+    "name": "London Lang, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Simi Valley",
+    "state": "CA",
+    "lat": 34.2694,
+    "lng": -118.7815
+  },
+  {
+    "name": "Gaye Green, MS, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "Vacaville",
+    "state": "CA",
+    "lat": 38.3566,
+    "lng": -121.9877
+  },
+  {
+    "name": "Elyssa Hoffman, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Roseville",
+    "state": "CA",
+    "lat": 38.7521,
+    "lng": -121.288
+  },
+  {
+    "name": "Shunnae DeStephano",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Concord",
+    "state": "CA",
+    "lat": 37.978,
+    "lng": -122.0311
+  },
+  {
+    "name": "Sara Wallace",
+    "specialty": "Occupational Therapist",
+    "city": "Glendora",
+    "state": "CA",
+    "lat": 34.1361,
+    "lng": -117.8653
+  },
+  {
+    "name": "Katy Cutaran",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Sharlyn Sumbillo Park",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Orange",
+    "state": "CA",
+    "lat": 33.7879,
+    "lng": -117.8531
+  },
+  {
+    "name": "La Jannelle Smith",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lancaster",
+    "state": "CA",
+    "lat": 34.6868,
+    "lng": -118.1542
+  },
+  {
+    "name": "Camille Lauer",
+    "specialty": "Occupational Therapist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Jasmin Martinez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Hawthorne",
+    "state": "CA",
+    "lat": 33.9164,
+    "lng": -118.3526
+  },
+  {
+    "name": "Ciara Delgado",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Redlands",
+    "state": "CA",
+    "lat": 34.0556,
+    "lng": -117.1825
+  },
+  {
+    "name": "Nakia Myles, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Norwalk",
+    "state": "CA",
+    "lat": 33.9022,
+    "lng": -118.0817
+  },
+  {
+    "name": "Angie Ramirez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Beaumont",
+    "state": "CA",
+    "lat": 33.9294,
+    "lng": -116.977
+  },
+  {
+    "name": "Laura Vincent",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Lindsey Nitake-Mitchell",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Torrance",
+    "state": "CA",
+    "lat": 33.8358,
+    "lng": -118.3406
+  },
+  {
+    "name": "India Banks",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Allison Allen",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lakeside",
+    "state": "CA",
+    "lat": 32.8578,
+    "lng": -116.9222
+  },
+  {
+    "name": "Rebecca Kim, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lawndale",
+    "state": "CA",
+    "lat": 33.8872,
+    "lng": -118.3525
+  },
+  {
+    "name": "Kristtyn Beverstock, MS, OTR",
+    "specialty": "Occupational Therapist",
+    "city": "Clayton",
+    "state": "CA",
+    "lat": 37.9408,
+    "lng": -121.9358
+  },
+  {
+    "name": "Gianna Marinai-Davy",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Healdsburg",
+    "state": "CA",
+    "lat": 38.6102,
+    "lng": -122.8691
+  },
+  {
+    "name": "Chidera Oyeka",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Jose",
+    "state": "CA",
+    "lat": 37.3382,
+    "lng": -121.8863
+  },
+  {
+    "name": "Steve Garske",
+    "specialty": "Physical Therapist",
+    "city": "Walnut Creek",
+    "state": "CA",
+    "lat": 37.9101,
+    "lng": -122.0652
+  },
+  {
+    "name": "Chelsea Bates",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Leandro",
+    "state": "CA",
+    "lat": 37.7249,
+    "lng": -122.1561
+  },
+  {
+    "name": "Arianna Bayangos",
+    "specialty": "Occupational Therapist",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "lat": 33.8492,
+    "lng": -118.3884
+  },
+  {
+    "name": "Dali Smolsky",
+    "specialty": "Occupational Therapist",
+    "city": "Clayton",
+    "state": "CA",
+    "lat": 37.9408,
+    "lng": -121.9358
+  },
+  {
+    "name": "Katia Shank",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Torrance",
+    "state": "CA",
+    "lat": 33.8358,
+    "lng": -118.3406
+  },
+  {
+    "name": "Denise Smith",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Murrieta",
+    "state": "CA",
+    "lat": 33.5539,
+    "lng": -117.2139
+  },
+  {
+    "name": "Dedee Chuop",
+    "specialty": "Speech-Language Pathologist",
+    "city": "West Covina",
+    "state": "CA",
+    "lat": 34.0686,
+    "lng": -117.939
+  },
+  {
+    "name": "Shantel Lopez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Hacienda Heights",
+    "state": "CA",
+    "lat": 33.9931,
+    "lng": -117.9692
+  },
+  {
+    "name": "Malisa Lizaola",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Beaumont",
+    "state": "CA",
+    "lat": 33.9294,
+    "lng": -116.977
+  },
+  {
+    "name": "Lori Walker",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Petaluma",
+    "state": "CA",
+    "lat": 38.2324,
+    "lng": -122.6367
+  },
+  {
+    "name": "Katie Baumbach",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Petaluma",
+    "state": "CA",
+    "lat": 38.2324,
+    "lng": -122.6367
+  },
+  {
+    "name": "Carolina Perez-Venero",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Rafael",
+    "state": "CA",
+    "lat": 37.9735,
+    "lng": -122.5311
+  },
+  {
+    "name": "Nicolette Langer",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Petaluma",
+    "state": "CA",
+    "lat": 38.2324,
+    "lng": -122.6367
+  },
+  {
+    "name": "Patricia Tanael Medalla",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Claire Pearson",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Pacifica",
+    "state": "CA",
+    "lat": 37.6138,
+    "lng": -122.4869
+  },
+  {
+    "name": "Samantha McWeeney",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Silverdale",
+    "state": "WA",
+    "lat": 47.6479,
+    "lng": -122.6943
+  },
+  {
+    "name": "Micaela Quintana",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Geyserville",
+    "state": "CA",
+    "lat": 38.7071,
+    "lng": -122.9007
+  },
+  {
+    "name": "Gina Calabrese",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Bejani Turley",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Torrance",
+    "state": "CA",
+    "lat": 33.8358,
+    "lng": -118.3406
+  },
+  {
+    "name": "Sarah Panjwani",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Gary Eng",
+    "specialty": "Occupational Therapist",
+    "city": "Hercules",
+    "state": "CA",
+    "lat": 37.9999,
+    "lng": -122.2897
+  },
+  {
+    "name": "Kim Smith",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Jennifer Pham",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Long Beach",
+    "state": "CA",
+    "lat": 33.7701,
+    "lng": -118.1937
+  },
+  {
+    "name": "Leah Gonzales",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Chula Vista",
+    "state": "CA",
+    "lat": 32.6401,
+    "lng": -117.0842
+  },
+  {
+    "name": "Tak Nim (Caren) Ho",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Arcadia",
+    "state": "CA",
+    "lat": 34.1397,
+    "lng": -118.0353
+  },
+  {
+    "name": "Anna Poggensee",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Jose",
+    "state": "CA",
+    "lat": 37.3382,
+    "lng": -121.8863
+  },
+  {
+    "name": "Teresa Le",
+    "specialty": "Occupational Therapist",
+    "city": "Union City",
+    "state": "CA",
+    "lat": 37.5934,
+    "lng": -122.0438
+  },
+  {
+    "name": "Kimberly Papageorge",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Amma Oduro",
+    "specialty": "Speech-Language Pathologist",
+    "city": "El Cerrito",
+    "state": "CA",
+    "lat": 37.9236,
+    "lng": -122.3122
+  },
+  {
+    "name": "Alexa Kelly, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Peachtree Corners",
+    "state": "GA",
+    "lat": 33.9698,
+    "lng": -84.2213
+  },
+  {
+    "name": "Ami Dean, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Christiansburg",
+    "state": "VA",
+    "lat": 37.1298,
+    "lng": -80.409
+  },
+  {
+    "name": "Andrea Garza, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sunland Park",
+    "state": "NM",
+    "lat": 31.7946,
+    "lng": -106.5836
+  },
+  {
+    "name": "Andrea Lacey, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Bellingham",
+    "state": "WA",
+    "lat": 48.7519,
+    "lng": -122.4787
+  },
+  {
+    "name": "Anna Kay Ellison, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Hutchinson Island",
+    "state": "FL",
+    "lat": 27.1892,
+    "lng": -80.2303
+  },
+  {
+    "name": "April Jackson, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Katy",
+    "state": "TX",
+    "lat": 29.7858,
+    "lng": -95.8244
+  },
+  {
+    "name": "Alyssa Ellingboe, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Everson",
+    "state": "WA",
+    "lat": 48.9126,
+    "lng": -122.3512
+  },
+  {
+    "name": "Autumn Hughes, M.Ed., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Duluth",
+    "state": "GA",
+    "lat": 34.0027,
+    "lng": -84.1446
+  },
+  {
+    "name": "Briana Chambers, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Mount Prospect",
+    "state": "IL",
+    "lat": 42.0664,
+    "lng": -87.9373
+  },
+  {
+    "name": "Bridget Turnbach, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Parkville",
+    "state": "MD",
+    "lat": 39.3776,
+    "lng": -76.5488
+  },
+  {
+    "name": "Carlie Keffer, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Evans City",
+    "state": "PA",
+    "lat": 40.7717,
+    "lng": -80.0642
+  },
+  {
+    "name": "Cathleen Thomas , DHSc, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Richmond",
+    "state": "VA",
+    "lat": 37.5407,
+    "lng": -77.436
+  },
+  {
+    "name": "Catrina Hughes, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Springfield",
+    "state": "IL",
+    "lat": 39.7817,
+    "lng": -89.6501
+  },
+  {
+    "name": "Chantal Mathurin, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Wimauma",
+    "state": "FL",
+    "lat": 27.7117,
+    "lng": -82.3082
+  },
+  {
+    "name": "Chauncey Malone, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Dacula",
+    "state": "GA",
+    "lat": 33.9887,
+    "lng": -83.8988
+  },
+  {
+    "name": "Cheridan Nwaozuru, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fulshear",
+    "state": "TX",
+    "lat": 29.6911,
+    "lng": -95.8897
+  },
+  {
+    "name": "Clarissa Ocampo, MM, MA CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Severna Park",
+    "state": "MD",
+    "lat": 39.0707,
+    "lng": -76.5491
+  },
+  {
+    "name": "Cristina Castro, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Winter Springs",
+    "state": "FL",
+    "lat": 28.6989,
+    "lng": -81.2712
+  },
+  {
+    "name": "Deborah Gates, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Willis",
+    "state": "VA",
+    "lat": 36.8337,
+    "lng": -80.4681
+  },
+  {
+    "name": "Donna Rice, EdD, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "White Plains",
+    "state": "MD",
+    "lat": 38.5968,
+    "lng": -76.9736
+  },
+  {
+    "name": "Elyse Helbig-Guevara, M.Ed., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Staunton",
+    "state": "VA",
+    "lat": 38.1496,
+    "lng": -79.0717
+  },
+  {
+    "name": "Emilee Lane, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Dublin",
+    "state": "VA",
+    "lat": 37.1043,
+    "lng": -80.6887
+  },
+  {
+    "name": "Emily Bromer, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lynchburg",
+    "state": "VA",
+    "lat": 37.4138,
+    "lng": -79.1422
+  },
+  {
+    "name": "Francine Vasquez, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Philadelphia",
+    "state": "PA",
+    "lat": 39.9526,
+    "lng": -75.1652
+  },
+  {
+    "name": "Julie Meyerowitz, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Philadelphia",
+    "state": "PA",
+    "lat": 39.9526,
+    "lng": -75.1652
+  },
+  {
+    "name": "Kelly Blickenstaff, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Owings Mills",
+    "state": "MD",
+    "lat": 39.4137,
+    "lng": -76.7802
+  },
+  {
+    "name": "Kendra Browne, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Bowie",
+    "state": "MD",
+    "lat": 38.9429,
+    "lng": -76.7791
+  },
+  {
+    "name": "Kimberly Osam, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fredericksburg",
+    "state": "VA",
+    "lat": 38.3032,
+    "lng": -77.4605
+  },
+  {
+    "name": "Kristin Dattoria, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lusby",
+    "state": "MD",
+    "lat": 38.4182,
+    "lng": -76.4502
+  },
+  {
+    "name": "Lisa Ceballo, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Palmetto",
+    "state": "FL",
+    "lat": 27.5228,
+    "lng": -82.5776
+  },
+  {
+    "name": "Maiya Coilton, MS, CCC-SLP, M.Ed",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Washington",
+    "state": "DC",
+    "lat": 38.9072,
+    "lng": -77.0369
+  },
+  {
+    "name": "Mary Kate McShane, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Havertown",
+    "state": "PA",
+    "lat": 39.9815,
+    "lng": -75.3088
+  },
+  {
+    "name": "Michelle Lowry , MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Burbank",
+    "state": "WA",
+    "lat": 47.0073,
+    "lng": -122.4473
+  },
+  {
+    "name": "Michelle Storm, MS, OT/R",
+    "specialty": "Occupational Therapist",
+    "city": "Farmington",
+    "state": "NM",
+    "lat": 36.7281,
+    "lng": -108.2087
+  },
+  {
+    "name": "Nicole Kain, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Gloucester",
+    "state": "VA",
+    "lat": 37.4085,
+    "lng": -76.5085
+  },
+  {
+    "name": "Norah AlJunaidi, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Arnold",
+    "state": "MD",
+    "lat": 39.0354,
+    "lng": -76.4988
+  },
+  {
+    "name": "Paige Jackowski, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Downers Grove",
+    "state": "IL",
+    "lat": 41.8081,
+    "lng": -88.0112
+  },
+  {
+    "name": "Paul McGill, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Costa Mesa",
+    "state": "CA",
+    "lat": 33.6411,
+    "lng": -117.9187
+  },
+  {
+    "name": "Ruthvi Patel, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Palatine",
+    "state": "IL",
+    "lat": 42.1103,
+    "lng": -88.034
+  },
+  {
+    "name": "Sami Wong, MS, CCC-SLP, PhD, MBA",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Vancouver",
+    "state": "WA",
+    "lat": 45.6387,
+    "lng": -122.6615
+  },
+  {
+    "name": "Seme Anthony, M.S.Ed, CCC-SLP/L, TSSLD",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Marietta",
+    "state": "GA",
+    "lat": 33.9526,
+    "lng": -84.5499
+  },
+  {
+    "name": "Sarah Sponseller, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Port Orchard",
+    "state": "WA",
+    "lat": 47.5401,
+    "lng": -122.6329
+  },
+  {
+    "name": "Susan Laine, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Midlothian",
+    "state": "VA",
+    "lat": 37.5168,
+    "lng": -77.6453
+  },
+  {
+    "name": "Susan Barry, MA, SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Leonardtown",
+    "state": "MD",
+    "lat": 38.2918,
+    "lng": -76.6344
+  },
+  {
+    "name": "Taylor Nappi, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Huddleston",
+    "state": "VA",
+    "lat": 37.1518,
+    "lng": -79.5653
+  },
+  {
+    "name": "Tiffany Reed, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Washington",
+    "state": "DC",
+    "lat": 38.9072,
+    "lng": -77.0369
+  },
+  {
+    "name": "Yena Kim, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lutz",
+    "state": "FL",
+    "lat": 28.1547,
+    "lng": -82.4582
+  },
+  {
+    "name": "Ashlyn Southard",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Reina McKnight",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Aleks Garcia",
+    "specialty": "Speech-Language Pathologist",
+    "city": "West Hills",
+    "state": "CA",
+    "lat": 34.2003,
+    "lng": -118.6437
+  },
+  {
+    "name": "Abigail Meza",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Chino",
+    "state": "CA",
+    "lat": 34.0122,
+    "lng": -117.6889
+  },
+  {
+    "name": "Heidi Garske",
+    "specialty": "Physical Therapist",
+    "city": "Walnut Creek",
+    "state": "CA",
+    "lat": 37.9101,
+    "lng": -122.0652
+  },
+  {
+    "name": "Lauren Coomber",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Viry Engberg",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Mateo",
+    "state": "CA",
+    "lat": 37.563,
+    "lng": -122.3255
+  },
+  {
+    "name": "Ric Ruiz",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Culver City",
+    "state": "CA",
+    "lat": 34.0211,
+    "lng": -118.3965
+  },
+  {
+    "name": "Yomna Elsiddig",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Culver City",
+    "state": "CA",
+    "lat": 34.0211,
+    "lng": -118.3965
+  },
+  {
+    "name": "Keisha Omwanghe",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Moreno Valley",
+    "state": "CA",
+    "lat": 33.9425,
+    "lng": -117.2297
+  },
+  {
+    "name": "Makayla Esway",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Lake Forest",
+    "state": "CA",
+    "lat": 33.6469,
+    "lng": -117.6892
+  },
+  {
+    "name": "Shauna Brown, MS CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Makenna Parker",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Michelle Lee",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Jose",
+    "state": "CA",
+    "lat": 37.3382,
+    "lng": -121.8863
+  },
+  {
+    "name": "Verenice Meza",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Carson",
+    "state": "CA",
+    "lat": 33.8317,
+    "lng": -118.2823
+  },
+  {
+    "name": "Colleen Diaz Quimbo",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Newark",
+    "state": "CA",
+    "lat": 37.5296,
+    "lng": -122.0402
+  },
+  {
+    "name": "Lauren Armstrong",
+    "specialty": "Occupational Therapist",
+    "city": "Santa Rosa",
+    "state": "CA",
+    "lat": 38.4404,
+    "lng": -122.7141
+  },
+  {
+    "name": "Shaquille Cooper",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Santa Fe Springs",
+    "state": "CA",
+    "lat": 33.9428,
+    "lng": -118.075
+  },
+  {
+    "name": "Emma Depew",
+    "specialty": "Speech-Language Pathologist",
+    "city": "La Verne",
+    "state": "CA",
+    "lat": 34.1008,
+    "lng": -117.7678
+  },
+  {
+    "name": "Evelyn Chu",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Emily Abi-Nader",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sacramento",
+    "state": "CA",
+    "lat": 38.5816,
+    "lng": -121.4944
+  },
+  {
+    "name": "Mary Manzano",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Juan Capistrano",
+    "state": "CA",
+    "lat": 33.5017,
+    "lng": -117.6625
+  },
+  {
+    "name": "Crystal Gines",
+    "specialty": "Occupational Therapist",
+    "city": "San Mateo",
+    "state": "CA",
+    "lat": 37.563,
+    "lng": -122.3255
+  },
+  {
+    "name": "Mari Yao",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Wari Sadasiva",
+    "specialty": "Occupational Therapist",
+    "city": "Pleasanton",
+    "state": "CA",
+    "lat": 37.6624,
+    "lng": -121.8747
+  },
+  {
+    "name": "Sandy York",
+    "specialty": "Occupational Therapist",
+    "city": "Altadena",
+    "state": "CA",
+    "lat": 34.1897,
+    "lng": -118.1314
+  },
+  {
+    "name": "Gandhi Murugappan",
+    "specialty": "Occupational Therapist",
+    "city": "Pleasanton",
+    "state": "CA",
+    "lat": 37.6624,
+    "lng": -121.8747
+  },
+  {
+    "name": "Jacqueline Hernandez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Buena Park",
+    "state": "CA",
+    "lat": 33.8675,
+    "lng": -117.9981
+  },
+  {
+    "name": "Margarita Makarenko",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Bakersfield",
+    "state": "CA",
+    "lat": 35.3733,
+    "lng": -119.0187
+  },
+  {
+    "name": "Melissa Hager, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Winter Park",
+    "state": "FL",
+    "lat": 28.5997,
+    "lng": -81.3392
+  },
+  {
+    "name": "Aishwarya Rajesh",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Antioch",
+    "state": "CA",
+    "lat": 37.9963,
+    "lng": -121.8058
+  },
+  {
+    "name": "Maggie Hogan",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Yolanda Gillotte",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Andrea Campbell",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Erin Martin",
+    "specialty": "Occupational Therapist",
+    "city": "Leonardtown",
+    "state": "MD",
+    "lat": 38.2918,
+    "lng": -76.6344
+  },
+  {
+    "name": "Esther Jang",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Madison Anderson",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Palmdale",
+    "state": "CA",
+    "lat": 34.5794,
+    "lng": -118.1165
+  },
+  {
+    "name": "Charles Norried",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Northridge",
+    "state": "CA",
+    "lat": 34.2364,
+    "lng": -118.5295
+  },
+  {
+    "name": "Carrie Walker",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Virginia Beach",
+    "state": "VA",
+    "lat": 36.8529,
+    "lng": -75.978
+  },
+  {
+    "name": "Michelle Hoeltgen",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Palmdale",
+    "state": "CA",
+    "lat": 34.5794,
+    "lng": -118.1165
+  },
+  {
+    "name": "Catherine Johns",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Stephenville",
+    "state": "TX",
+    "lat": 32.2207,
+    "lng": -98.2023
+  },
+  {
+    "name": "Tina Peralta",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fairfield",
+    "state": "CA",
+    "lat": 38.2494,
+    "lng": -122.04
+  },
+  {
+    "name": "Martine Harris",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Los Angeles",
+    "state": "CA",
+    "lat": 34.0522,
+    "lng": -118.2437
+  },
+  {
+    "name": "Melissa Higashi",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Calabasas",
+    "state": "CA",
+    "lat": 34.1358,
+    "lng": -118.6581
+  },
+  {
+    "name": "Michelle Agbayani",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Leslie Chen",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Cerritos",
+    "state": "CA",
+    "lat": 33.8584,
+    "lng": -118.0647
+  },
+  {
+    "name": "Christian Fischer",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Glendale",
+    "state": "CA",
+    "lat": 34.1425,
+    "lng": -118.2551
+  },
+  {
+    "name": "Brittany Schoellkopf",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sherman Oaks",
+    "state": "CA",
+    "lat": 34.1511,
+    "lng": -118.4493
+  },
+  {
+    "name": "Kassandra Rodriguez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Reedley",
+    "state": "CA",
+    "lat": 36.5966,
+    "lng": -119.4502
+  },
+  {
+    "name": "Mukunthan Subramani",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Beaumont",
+    "state": "CA",
+    "lat": 33.9294,
+    "lng": -116.977
+  },
+  {
+    "name": "Sara Aguilar",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Redondo Beach",
+    "state": "CA",
+    "lat": 33.8492,
+    "lng": -118.3884
+  },
+  {
+    "name": "Sabrina Montano",
+    "specialty": "Occupational Therapist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Rosa Preciado-Rodriguez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Jamila Brown",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Bellflower",
+    "state": "CA",
+    "lat": 33.8817,
+    "lng": -118.117
+  },
+  {
+    "name": "Lauren Berman, OTD, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "West Hollywood",
+    "state": "CA",
+    "lat": 34.09,
+    "lng": -118.3617
+  },
+  {
+    "name": "Robyn Mcmasters, MS. OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "San Diego",
+    "state": "CA",
+    "lat": 32.7157,
+    "lng": -117.1611
+  },
+  {
+    "name": "Sadie Hunsaker, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Melissa",
+    "state": "TX",
+    "lat": 33.2851,
+    "lng": -96.5722
+  },
+  {
+    "name": "Margie Daley, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Palos Verdes Estates",
+    "state": "CA",
+    "lat": 33.7862,
+    "lng": -118.3879
+  },
+  {
+    "name": "Kellie Diaz, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Moreno Valley",
+    "state": "CA",
+    "lat": 33.9425,
+    "lng": -117.2297
+  },
+  {
+    "name": "Rita Moynihan, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Winter Park",
+    "state": "FL",
+    "lat": 28.5997,
+    "lng": -81.3392
+  },
+  {
+    "name": "Christina Kennedy, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fort Worth",
+    "state": "TX",
+    "lat": 32.7555,
+    "lng": -97.3308
+  },
+  {
+    "name": "Karissa Kennedy-Castillo, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Eastvale",
+    "state": "CA",
+    "lat": 33.9503,
+    "lng": -117.582
+  },
+  {
+    "name": "Susanna Prim, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Anaheim",
+    "state": "CA",
+    "lat": 33.8366,
+    "lng": -117.9143
+  },
+  {
+    "name": "Alex Rocheleau, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Clayton",
+    "state": "CA",
+    "lat": 37.9408,
+    "lng": -121.9358
+  },
+  {
+    "name": "Chloe Poon, MS, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "La Puente",
+    "state": "CA",
+    "lat": 34.0197,
+    "lng": -117.9498
+  },
+  {
+    "name": "Julissa Mendoza, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Bakersfield",
+    "state": "CA",
+    "lat": 35.3733,
+    "lng": -119.0187
+  },
+  {
+    "name": "Kasey Thornton, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Elliston",
+    "state": "VA",
+    "lat": 37.2382,
+    "lng": -80.2681
+  },
+  {
+    "name": "Veronica Tejeda, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "El Paso",
+    "state": "TX",
+    "lat": 31.7619,
+    "lng": -106.485
+  },
+  {
+    "name": "Lyndsie Mcguire, M.A., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fresno",
+    "state": "CA",
+    "lat": 36.7378,
+    "lng": -119.7871
+  },
+  {
+    "name": "Danielle Trapani, SLPA",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Julia Walton, SLPA",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Francisco",
+    "state": "CA",
+    "lat": 37.7749,
+    "lng": -122.4194
+  },
+  {
+    "name": "Brenda Tiemann, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Valencia",
+    "state": "CA",
+    "lat": 34.4117,
+    "lng": -118.5527
+  },
+  {
+    "name": "Beth Baron, M.Ed., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Aldie",
+    "state": "VA",
+    "lat": 38.9904,
+    "lng": -77.6527
+  },
+  {
+    "name": "Vanessa Castillo, M.S., CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Bakersfield",
+    "state": "CA",
+    "lat": 35.3733,
+    "lng": -119.0187
+  },
+  {
+    "name": "Judiel Choe",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Chino Hills",
+    "state": "CA",
+    "lat": 33.9898,
+    "lng": -117.7326
+  },
+  {
+    "name": "Marinna Castillo",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Bakersfield",
+    "state": "CA",
+    "lat": 35.3733,
+    "lng": -119.0187
+  },
+  {
+    "name": "Alison Hood",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Colbert",
+    "state": "WA",
+    "lat": 47.9826,
+    "lng": -117.3673
+  },
+  {
+    "name": "Minhee Choi",
+    "specialty": "Occupational Therapist",
+    "city": "Torrance",
+    "state": "CA",
+    "lat": 33.8358,
+    "lng": -118.3406
+  },
+  {
+    "name": "Ana Hayes",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Murrieta",
+    "state": "CA",
+    "lat": 33.5539,
+    "lng": -117.2139
+  },
+  {
+    "name": "Zo\u00eb Saunders",
+    "specialty": "Occupational Therapist",
+    "city": "Inglewood",
+    "state": "CA",
+    "lat": 33.9617,
+    "lng": -118.3531
+  },
+  {
+    "name": "Paige Shreiber",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Aliso Viejo",
+    "state": "CA",
+    "lat": 33.5769,
+    "lng": -117.7256
+  },
+  {
+    "name": "Natalie Murray",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Gabriel",
+    "state": "CA",
+    "lat": 34.0961,
+    "lng": -118.1058
+  },
+  {
+    "name": "Angee Dowdy",
+    "specialty": "Occupational Therapist",
+    "city": "Concord",
+    "state": "CA",
+    "lat": 37.978,
+    "lng": -122.0311
+  },
+  {
+    "name": "Nicole Hernandez",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Upland",
+    "state": "CA",
+    "lat": 34.0975,
+    "lng": -117.6484
+  },
+  {
+    "name": "Kaleigh Matthews",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Walnut Creek",
+    "state": "CA",
+    "lat": 37.9101,
+    "lng": -122.0652
+  },
+  {
+    "name": "Katelynn Myers",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Roseville",
+    "state": "CA",
+    "lat": 38.7521,
+    "lng": -121.288
+  },
+  {
+    "name": "Angela Harris, MS, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "Hillsville",
+    "state": "VA",
+    "lat": 36.7596,
+    "lng": -80.7348
+  },
+  {
+    "name": "Rebecca Day",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Folsom",
+    "state": "CA",
+    "lat": 38.678,
+    "lng": -121.1761
+  },
+  {
+    "name": "Alisha Isom, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Fries",
+    "state": "VA",
+    "lat": 36.7196,
+    "lng": -80.9762
+  },
+  {
+    "name": "Carley Hedge, OTD, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "Hiwassee",
+    "state": "VA",
+    "lat": 36.9815,
+    "lng": -80.5484
+  },
+  {
+    "name": "Jessica Moreno, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Roseville",
+    "state": "CA",
+    "lat": 38.7521,
+    "lng": -121.288
+  },
+  {
+    "name": "Nadia Saleh",
+    "specialty": "Occupational Therapist",
+    "city": "Gardena",
+    "state": "CA",
+    "lat": 33.8883,
+    "lng": -118.309
+  },
+  {
+    "name": "Ana Vives, MS, OTR/L",
+    "specialty": "Occupational Therapist",
+    "city": "San Ramon",
+    "state": "CA",
+    "lat": 37.7799,
+    "lng": -121.978
+  },
+  {
+    "name": "Karina Phan DOT",
+    "specialty": "Occupational Therapist",
+    "city": "Concord",
+    "state": "CA",
+    "lat": 37.978,
+    "lng": -122.0311
+  },
+  {
+    "name": "Ilene Govea, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Orange Cove",
+    "state": "CA",
+    "lat": 36.6244,
+    "lng": -119.3135
+  },
+  {
+    "name": "Shana Engram-Kitchin MS. CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Oakland",
+    "state": "CA",
+    "lat": 37.8044,
+    "lng": -122.2712
+  },
+  {
+    "name": "Heather Kleinhans, SLPA",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Visalia",
+    "state": "CA",
+    "lat": 36.3302,
+    "lng": -119.2921
+  },
+  {
+    "name": "Wendy Coral",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Brooklyn",
+    "state": "NY",
+    "lat": 40.6782,
+    "lng": -73.9442
+  },
+  {
+    "name": "Ankita Wheeler",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "lat": 40.7608,
+    "lng": -111.891
+  },
+  {
+    "name": "Alexandra \"Ali\" Davidson, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Boulder",
+    "state": "CO",
+    "lat": 40.015,
+    "lng": -105.2705
+  },
+  {
+    "name": "Alex Munroe, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Chicago",
+    "state": "IL",
+    "lat": 41.8781,
+    "lng": -87.6298
+  },
+  {
+    "name": "Dr. Alexandria Gawlik, SLPD, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Antonio",
+    "state": "TX",
+    "lat": 29.4241,
+    "lng": -98.4936
+  },
+  {
+    "name": "Amy Kunstle, RD, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "lat": 38.8339,
+    "lng": -104.8214
+  },
+  {
+    "name": "Andromeda Zamora, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Albuquerque",
+    "state": "NM",
+    "lat": 35.0844,
+    "lng": -106.6504
+  },
+  {
+    "name": "Bernycia Askew , MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Detroit",
+    "state": "MI",
+    "lat": 42.3314,
+    "lng": -83.0458
+  },
+  {
+    "name": "Brittney Ford Webb, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Antonio",
+    "state": "TX",
+    "lat": 29.4241,
+    "lng": -98.4936
+  },
+  {
+    "name": "Christy Harden, MS, SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Austin",
+    "state": "TX",
+    "lat": 30.2672,
+    "lng": -97.7431
+  },
+  {
+    "name": "Christine Corl, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Seattle",
+    "state": "WA",
+    "lat": 47.6062,
+    "lng": -122.3321
+  },
+  {
+    "name": "Christie Haigh, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Tucson",
+    "state": "AZ",
+    "lat": 32.2226,
+    "lng": -110.9747
+  },
+  {
+    "name": "Deshia Dees, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Atlanta",
+    "state": "GA",
+    "lat": 33.749,
+    "lng": -84.388
+  },
+  {
+    "name": "Erin Harris, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Atlanta",
+    "state": "GA",
+    "lat": 33.749,
+    "lng": -84.388
+  },
+  {
+    "name": "Jayla Weaver, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Dallas",
+    "state": "TX",
+    "lat": 32.7767,
+    "lng": -96.797
+  },
+  {
+    "name": "Jessica Arnautovic, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Atlanta",
+    "state": "GA",
+    "lat": 33.749,
+    "lng": -84.388
+  },
+  {
+    "name": "Katherin Oigbokie, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Antonio",
+    "state": "TX",
+    "lat": 29.4241,
+    "lng": -98.4936
+  },
+  {
+    "name": "Keelin Hubbard, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Tacoma",
+    "state": "WA",
+    "lat": 47.2529,
+    "lng": -122.4443
+  },
+  {
+    "name": "Kristen Riley, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Salem",
+    "state": "OR",
+    "lat": 44.9429,
+    "lng": -123.0351
+  },
+  {
+    "name": "Lauren Brasfield, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Portland",
+    "state": "OR",
+    "lat": 45.5051,
+    "lng": -122.675
+  },
+  {
+    "name": "Lesley Meza, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Chicago",
+    "state": "IL",
+    "lat": 41.8781,
+    "lng": -87.6298
+  },
+  {
+    "name": "Lydia Ort, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Denver",
+    "state": "CO",
+    "lat": 39.7392,
+    "lng": -104.9903
+  },
+  {
+    "name": "Malikaa Matthews Long, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Baltimore",
+    "state": "MD",
+    "lat": 39.2904,
+    "lng": -76.6122
+  },
+  {
+    "name": "Mari Gottlieb, MA, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Boulder",
+    "state": "CO",
+    "lat": 40.015,
+    "lng": -105.2705
+  },
+  {
+    "name": "Nikole Boland, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Atlanta",
+    "state": "GA",
+    "lat": 33.749,
+    "lng": -84.388
+  },
+  {
+    "name": "Samantha Schultz, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Chicago",
+    "state": "IL",
+    "lat": 41.8781,
+    "lng": -87.6298
+  },
+  {
+    "name": "Samantha Welch, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Denver",
+    "state": "CO",
+    "lat": 39.7392,
+    "lng": -104.9903
+  },
+  {
+    "name": "Sierra Lucas , MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Atlanta",
+    "state": "GA",
+    "lat": 33.749,
+    "lng": -84.388
+  },
+  {
+    "name": "Stephanie Rich, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Phoenix",
+    "state": "AZ",
+    "lat": 33.4484,
+    "lng": -112.074
+  },
+  {
+    "name": "Taryn Townsend, SLPD, CCC-SLP, CBIS",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Houston",
+    "state": "TX",
+    "lat": 29.7604,
+    "lng": -95.3698
+  },
+  {
+    "name": "Zhenyu Fu, MS, CCC-SLP",
+    "specialty": "Speech-Language Pathologist",
+    "city": "Sioux Falls",
+    "state": "SD",
+    "lat": 43.5446,
+    "lng": -96.7311
+  },
+  {
+    "name": "Jazzarae Tristan",
+    "specialty": "Speech-Language Pathologist",
+    "city": "San Antonio",
+    "state": "TX",
+    "lat": 29.4241,
+    "lng": -98.4936
+  }
 ]

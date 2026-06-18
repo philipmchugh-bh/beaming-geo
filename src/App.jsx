@@ -14,7 +14,7 @@ import {
   buildShareText,
 } from './gameLogic.js';
 
-const TOTAL_ROUNDS = 3;
+const TOTAL_ROUNDS = 5;
 
 function ScoreDots({ current, rounds }) {
   return (
@@ -63,7 +63,7 @@ function ResultsScreen({ rounds, dailyProviders, dateStr, onReset }) {
 
         <div style={{ fontSize: 48, fontWeight: 800, color: 'var(--teal-light)', marginBottom: 4 }}>
           {total}
-          <span style={{ fontSize: 20, color: 'var(--text-muted)', fontWeight: 400 }}>/300</span>
+          <span style={{ fontSize: 20, color: 'var(--text-muted)', fontWeight: 400 }}>/500</span>
         </div>
         <div style={{ fontSize: 14, color: 'var(--text-muted)', marginBottom: 24 }}>Total Score</div>
 
@@ -97,7 +97,12 @@ function ResultsScreen({ rounds, dailyProviders, dateStr, onReset }) {
         {/* DEV ONLY — remove before launch */}
         <button
           style={{ ...styles.btnGhost, marginTop: 12, fontSize: 12 }}
-          onClick={() => { localStorage.removeItem('beaming-geo-' + dateStr); window.location.reload(); }}
+          onClick={() => {
+            const next = (parseInt(localStorage.getItem('beaming-geo-offset') || '0', 10) + 1) * 99991;
+            localStorage.setItem('beaming-geo-offset', String(next));
+            localStorage.removeItem('beaming-geo-' + dateStr);
+            window.location.reload();
+          }}
         >
           ↺ Play again (testing)
         </button>
@@ -108,7 +113,10 @@ function ResultsScreen({ rounds, dailyProviders, dateStr, onReset }) {
 
 export default function App() {
   const dateStr = getTodayKey();
-  const [dailyProviders] = useState(() => getDailyProviders(providers, dateStr, TOTAL_ROUNDS));
+  const [dailyProviders] = useState(() => {
+    const offset = parseInt(localStorage.getItem('beaming-geo-offset') || '0', 10);
+    return getDailyProviders(providers, dateStr, TOTAL_ROUNDS, offset);
+  });
   const [currentRound, setCurrentRound] = useState(0);
   const [guessLatLng, setGuessLatLng] = useState(null);
   const [pendingGuess, setPendingGuess] = useState(null);

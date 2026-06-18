@@ -18,8 +18,8 @@ export function getTodayKey() {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 }
 
-export function getDailyProviders(providers, dateStr, count = 3) {
-  const seed = dateToSeed(dateStr);
+export function getDailyProviders(providers, dateStr, count = 5, seedOffset = 0) {
+  const seed = dateToSeed(dateStr) + seedOffset;
   const rand = mulberry32(seed);
   const shuffled = [...providers];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -95,5 +95,5 @@ export function buildShareText(dateStr, rounds) {
   })();
   const emojis = rounds.map(r => r.emoji).join(' ');
   const total = rounds.reduce((s, r) => s + r.score, 0);
-  return `Beaming Geo ${display}\n${emojis}\n${total}/300 pts`;
+  return `Beaming Geo ${display}\n${emojis}\n${total}/500 pts`;
 }

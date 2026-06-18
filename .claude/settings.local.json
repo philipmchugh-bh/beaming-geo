@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(VITE_MAPBOX_TOKEN=\"\" npm run build)",
-      "Bash(python3)"
+      "Bash(python3)",
+      "Bash(node *)",
+      "Bash(npm run *)"
     ]
   }
 }
