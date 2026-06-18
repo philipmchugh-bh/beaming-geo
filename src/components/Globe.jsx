@@ -8,7 +8,7 @@ if (TOKEN) mapboxgl.accessToken = TOKEN;
 const LINE_SOURCE = 'guess-line';
 const LINE_LAYER  = 'guess-line-layer';
 
-export default function Globe({ onGuess, guessLatLng, correctLatLng, disabled }) {
+export default function Globe({ onGuess, guessLatLng, correctLatLng, disabled, guessColor = '#ffffff' }) {
   const containerRef    = useRef();
   const mapRef          = useRef(null);
   const [tokenMissing]  = useState(!TOKEN);
@@ -85,7 +85,7 @@ export default function Globe({ onGuess, guessLatLng, correctLatLng, disabled })
     map.getCanvas().style.cursor = disabled ? 'default' : 'crosshair';
   }, [disabled]);
 
-  // Guess marker (white dot)
+  // Guess marker — color reflects score band once result is known
   useEffect(() => {
     guessMarkerRef.current?.remove();
     guessMarkerRef.current = null;
@@ -93,11 +93,11 @@ export default function Globe({ onGuess, guessLatLng, correctLatLng, disabled })
     if (!map || !guessLatLng) return;
 
     const el = document.createElement('div');
-    el.style.cssText = 'width:14px;height:14px;border-radius:50%;background:#ffffff;border:2px solid rgba(0,0,0,0.5);box-shadow:0 0 0 3px rgba(255,255,255,0.25)';
+    el.style.cssText = `width:14px;height:14px;border-radius:50%;background:${guessColor};border:2px solid rgba(0,0,0,0.5);box-shadow:0 0 0 3px rgba(255,255,255,0.2)`;
     guessMarkerRef.current = new mapboxgl.Marker({ element: el, anchor: 'center' })
       .setLngLat([guessLatLng.lng, guessLatLng.lat])
       .addTo(map);
-  }, [guessLatLng]);
+  }, [guessLatLng, guessColor]);
 
   // Correct location marker (teal dot)
   useEffect(() => {

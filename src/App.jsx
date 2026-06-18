@@ -63,7 +63,7 @@ function ResultsScreen({ rounds, dailyProviders, dateStr, onReset }) {
 
         <div style={{ fontSize: 48, fontWeight: 800, color: 'var(--teal-light)', marginBottom: 4 }}>
           {total}
-          <span style={{ fontSize: 20, color: 'var(--text-muted)', fontWeight: 400 }}>/999</span>
+          <span style={{ fontSize: 20, color: 'var(--text-muted)', fontWeight: 400 }}>/300</span>
         </div>
         <div style={{ fontSize: 14, color: 'var(--text-muted)', marginBottom: 24 }}>Total Score</div>
 
@@ -162,6 +162,10 @@ export default function App() {
   const provider = dailyProviders[currentRound];
   const currentRoundResult = rounds[currentRound];
 
+  const guessMarkerColor = currentRoundResult
+    ? (currentRoundResult.emoji === '🟩' ? '#4ade80' : currentRoundResult.emoji === '🟨' ? '#facc15' : '#f87171')
+    : '#ffffff';
+
   if (phase === 'done') {
     return <ResultsScreen rounds={rounds} dailyProviders={dailyProviders} dateStr={dateStr} />;
   }
@@ -197,6 +201,7 @@ export default function App() {
           guessLatLng={guessLatLng}
           correctLatLng={phase === 'result' ? { lat: provider.lat, lng: provider.lng } : null}
           disabled={phase !== 'guessing'}
+          guessColor={guessMarkerColor}
         />
       </div>
 

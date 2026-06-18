@@ -42,17 +42,21 @@ export function distanceKm(lat1, lng1, lat2, lng2) {
 }
 
 export function scoreForDistance(km) {
-  if (km < 50)   return 333;
-  if (km < 150)  return 250;
-  if (km < 300)  return 200;
-  if (km < 500)  return 150;
-  if (km < 1000) return 100;
-  return 50;
+  const mi = km * 0.621371;
+  if (mi <= 10) return 100;
+  if (mi <= 20) {
+    // steps down 1 pt per 2 miles: 11-12=95, 13-14=94, 15-16=93, 17-18=92, 19-20=91
+    return 96 - Math.ceil((mi - 10) / 2);
+  }
+  if (mi <= 100) return Math.round(90 - (mi - 20) * 0.5);     // 90 at 20mi → 50 at 100mi
+  if (mi <= 500) return Math.round(Math.max(5, 40 - (mi - 100) * (35 / 400))); // 40 at 100mi → 5 at 500mi
+  return 5;
 }
 
 export function emojiForDistance(km) {
-  if (km < 150)  return '🟩';
-  if (km < 400)  return '🟨';
+  const mi = km * 0.621371;
+  if (mi < 20)  return '🟩';
+  if (mi < 100) return '🟨';
   return '🟥';
 }
 
@@ -91,5 +95,5 @@ export function buildShareText(dateStr, rounds) {
   })();
   const emojis = rounds.map(r => r.emoji).join(' ');
   const total = rounds.reduce((s, r) => s + r.score, 0);
-  return `Beaming Geo ${display}\n${emojis}\n${total}/999 pts`;
+  return `Beaming Geo ${display}\n${emojis}\n${total}/300 pts`;
 }
