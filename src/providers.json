@@ -1,0 +1,12 @@
+[
+  { "name": "Sarah Chen, SLP", "specialty": "Speech-Language Pathologist · Pediatric Fluency", "city": "San Francisco", "lat": 37.7749, "lng": -122.4194 },
+  { "name": "Marcus Rivera, OT", "specialty": "Occupational Therapist · Sensory Integration", "city": "Los Angeles", "lat": 34.0522, "lng": -118.2437 },
+  { "name": "Priya Patel, PT", "specialty": "Physical Therapist · Pediatric Rehab", "city": "San Diego", "lat": 32.7157, "lng": -117.1611 },
+  { "name": "Jordan Kim, SLP", "specialty": "Speech-Language Pathologist · AAC Specialist", "city": "Sacramento", "lat": 38.5816, "lng": -121.4944 },
+  { "name": "Aisha Thompson, OT", "specialty": "Occupational Therapist · Fine Motor Skills", "city": "San Jose", "lat": 37.3382, "lng": -121.8863 },
+  { "name": "Carlos Mendez, PT", "specialty": "Physical Therapist · Neurological Conditions", "city": "Fresno", "lat": 36.7378, "lng": -119.7871 },
+  { "name": "Emily Nguyen, SLP", "specialty": "Speech-Language Pathologist · Autism Spectrum", "city": "Oakland", "lat": 37.8044, "lng": -122.2712 },
+  { "name": "David Park, OT", "specialty": "Occupational Therapist · School-Based Services", "city": "Riverside", "lat": 33.9806, "lng": -117.3755 },
+  { "name": "Sofia Rodriguez, PT", "specialty": "Physical Therapist · Sports & Orthopedic", "city": "Santa Ana", "lat": 33.7455, "lng": -117.8677 },
+  { "name": "Lena Hoffman, SLP", "specialty": "Speech-Language Pathologist · Voice Disorders", "city": "Bakersfield", "lat": 35.3733, "lng": -119.0187 }
+]
