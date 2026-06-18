@@ -74,7 +74,7 @@ function ResultsScreen({ rounds, dailyProviders, dateStr, onReset }) {
                 <span style={{ fontSize: 22 }}>{r.emoji}</span>
                 <div style={{ textAlign: 'left' }}>
                   <div style={{ fontSize: 14, fontWeight: 600 }}>{dailyProviders[i].name}</div>
-                  <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{dailyProviders[i].city} · {formatMiles(r.distance)}</div>
+                  <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{dailyProviders[i].city}, {dailyProviders[i].state} · {formatMiles(r.distance)}</div>
                 </div>
               </div>
               <div style={{ fontSize: 18, fontWeight: 700, color: 'var(--teal-light)' }}>+{r.score}</div>
@@ -94,18 +94,6 @@ function ResultsScreen({ rounds, dailyProviders, dateStr, onReset }) {
         <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 16 }}>
           Come back tomorrow for new providers!
         </div>
-        {/* DEV ONLY — remove before launch */}
-        <button
-          style={{ ...styles.btnGhost, marginTop: 12, fontSize: 12 }}
-          onClick={() => {
-            const next = (parseInt(localStorage.getItem('beaming-geo-offset') || '0', 10) + 1) * 99991;
-            localStorage.setItem('beaming-geo-offset', String(next));
-            localStorage.removeItem('beaming-geo-' + dateStr);
-            window.location.reload();
-          }}
-        >
-          ↺ Play again (testing)
-        </button>
       </div>
     </div>
   );
@@ -195,7 +183,7 @@ export default function App() {
         <div style={styles.providerSpecialty}>{provider.specialty}</div>
         <div style={{ fontSize: 12, color: 'var(--text-muted)', marginTop: 4 }}>
           {phase === 'result'
-            ? `${provider.city}, CA`
+            ? `${provider.city}, ${provider.state}`
             : pendingGuess
               ? 'Tap "Confirm Guess" or pick a different spot'
               : 'Tap the globe to place your guess'}
